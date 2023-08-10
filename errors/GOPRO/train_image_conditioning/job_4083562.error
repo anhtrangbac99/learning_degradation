@@ -1,0 +1,15 @@
+  0%|          | 0/2103 [00:00<?, ?it/s]  0%|          | 0/2103 [00:04<?, ?it/s]
+Traceback (most recent call last):
+  File "/export/home2/capd0001/ImageRestoration/degradation_learning/learning_degradation/train_image_conditioning.py", line 228, in <module>
+    main()
+  File "/export/home2/capd0001/ImageRestoration/degradation_learning/learning_degradation/train_image_conditioning.py", line 225, in main
+    train(args)
+  File "/export/home2/capd0001/ImageRestoration/degradation_learning/learning_degradation/train_image_conditioning.py", line 122, in train
+    loss = diffusion.trainloss(gt, cemb = cemb)
+  File "/export/home2/capd0001/ImageRestoration/degradation_learning/learning_degradation/diffusion.py", line 252, in trainloss
+    x_t, eps = self.q_sample(x_0, t)
+  File "/export/home2/capd0001/ImageRestoration/degradation_learning/learning_degradation/diffusion.py", line 92, in q_sample
+    return self._extract(self.sqrt_alphas_bar, t, x_0.shape) * x_0 \
+  File "/export/home2/capd0001/ImageRestoration/degradation_learning/learning_degradation/diffusion.py", line 75, in _extract
+    chosen = coef[t]
+RuntimeError: indices should be either on cpu or on the same device as the indexed tensor (cpu)

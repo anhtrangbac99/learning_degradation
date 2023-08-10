@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/export/home2/capd0001/ImageRestoration/degradation_learning/learning_degradation/train_image_conditioning.py", line 229, in <module>
+    main()
+  File "/export/home2/capd0001/ImageRestoration/degradation_learning/learning_degradation/train_image_conditioning.py", line 226, in main
+    train(args)
+  File "/export/home2/capd0001/ImageRestoration/degradation_learning/learning_degradation/train_image_conditioning.py", line 47, in train
+    cemblayer.to(device)
+  File "/export/home2/capd0001/anaconda3/envs/science/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1145, in to
+    return self._apply(convert)
+  File "/export/home2/capd0001/anaconda3/envs/science/lib/python3.10/site-packages/torch/nn/modules/module.py", line 797, in _apply
+    module._apply(fn)
+  File "/export/home2/capd0001/anaconda3/envs/science/lib/python3.10/site-packages/torch/nn/modules/module.py", line 797, in _apply
+    module._apply(fn)
+  File "/export/home2/capd0001/anaconda3/envs/science/lib/python3.10/site-packages/torch/nn/modules/module.py", line 820, in _apply
+    param_applied = fn(param)
+  File "/export/home2/capd0001/anaconda3/envs/science/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1143, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
